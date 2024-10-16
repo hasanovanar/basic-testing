@@ -49,12 +49,12 @@ describe('simpleCalculator tests', () => {
       action: Action.Exponentiate,
     });
     const result2 = simpleCalculator({
-      a: 5,
-      b: -2,
+      a: -5,
+      b: 2,
       action: Action.Exponentiate,
     });
     expect(result1).toBe(81);
-    expect(result2).toBe(0.04);
+    expect(result2).toBe(25);
   });
 
   test('should return null for invalid action', () => {
@@ -77,7 +77,13 @@ describe('simpleCalculator tests', () => {
       b: '7',
       action: Action.Subtract,
     });
+    const result3 = simpleCalculator({
+      a: '5',
+      b: '7',
+      action: Action.Multiply,
+    });
     expect(result1).toBeNull();
     expect(result2).toBeNull();
+    expect(result3).toBeNull();
   });
 });
