@@ -26,13 +26,3 @@ describe('simpleCalculator', () => {
     },
   );
 });
-
-/*
-describe('simpleCalculator', () => {
-  test.each(testCases)(
-    'should perform %s operation on %d and %d and result in %d',
-    ({ a, b, action, expected }) => {
-      expect(simpleCalculator({ a, b, action })).toBe(expected);
-    },
-  );
-});*/
