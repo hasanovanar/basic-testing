@@ -96,5 +96,7 @@ describe('readFileAsynchronously', () => {
     expect(result).toBeNull();
   });
 
-  test('should return file content if file exists', async () => {});
+  test('should return file content if file exists', async () => {
+    /* add test here*/
+  });
 });
